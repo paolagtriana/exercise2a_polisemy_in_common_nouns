@@ -19,7 +19,7 @@ doc=nlp(corpus)
 #CAPTURING NOUNS THAT CAN DENOTE INFORMATIONAL CONTENT
 #We first create a handmade list of adjectives denoting informational content
 propositional_predicates = ['verdadero', 'falso', 'plausible', 'implausible', 'cierto',
-                            'verídico', 'veraz', 'sincero', 'fáctico', 'infinito',
+                            'verídico', 'veraz', 'fáctico', 'infinito',
                             'interminable', 'perpetuo', 'imperecedero']
 #We create an empty list that will be filled with the nouns that fulfill the conditions
 nouns_info_cont = []
