@@ -4,11 +4,15 @@ import es_core_news_sm
 from collections import Counter 
 
 #LOADING THE DATA
-corpus_path = '/Users/paola/Desktop/exercise2/es_corpus.txt' #File path of the dataset
+#We specify the file path of the dataset
+corpus_path = './es_corpus.txt'
 
+#We open the dataset file and assign it to a new variable
 with open(corpus_path, 'r') as file:
-  corpus = file.read().replace('\n', ' ') #The .replace() method is used to replace the line break symbol (\n) with spaces
+  #We use the .replace() method to replace the line break symbol (\n) with spaces
+  corpus = file.read().replace('\n', ' ')
 
+#We apply the SpaCy model to our dataset
 nlp = spacy.load('es_core_news_sm')
 doc=nlp(corpus)
 
