@@ -54,7 +54,7 @@ for token in doc:
   if token.dep_ == "amod" and token.tag_=="ADJ" and token.lemma_ in eventive_pred and token.head.pos_ == "NOUN":
     nouns_ev.append(token.head.lemma_)
   if token.tag_ == "NUM" and token.head.dep_ == "nmod" and token.head.lemma_ in eventive_pp and token.head.head.tag_ == "NOUN" and token.head.head.pos_ == "NOUN":
-    nouns_ev.append(token.head.head.text)
+    nouns_ev.append(token.head.head.lemma_)
   if token.lemma_ in eventive_verbs and token.head.dep_ == "nsubj" and token.head.pos_ == "NOUN":
     nouns_ev.append(token.head.lemma_)
 
