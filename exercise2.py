@@ -81,7 +81,7 @@ freq_ev = Counter(nouns_ev)
 #Then we define a function to filter each frequency list by the coincidences of both lists
 def my_filtering_function(pair):
     #We define the words that we want to maintain in each frequency list
-    wanted_keys = ['vida', 'guerra', 'libro']
+    wanted_keys = ['guerra', 'libro']
     key, value = pair
     if key in wanted_keys:
         #Keep the pair in the list
