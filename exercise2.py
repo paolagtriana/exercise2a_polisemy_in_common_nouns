@@ -78,7 +78,7 @@ coincidences = set(coincidences)
 print('Intersections between these classes:', coincidences)
 print('\n')
 
-# MEASURING THE FREQUENCY OF THE COINCIDENCES IN EACH LIST
+#MEASURING THE FREQUENCY OF THE COINCIDENCES IN EACH LIST
 #We use the Counter function to measure the list of each element in each list
 freq_info_cont = Counter(nouns_info_cont)
 freq_ev = Counter(nouns_ev)
