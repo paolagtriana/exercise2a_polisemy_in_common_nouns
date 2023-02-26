@@ -3,7 +3,7 @@ import spacy
 import es_core_news_sm
 from collections import Counter 
 
-#LOADING THE DATA
+#LOADING AND PROCESSING THE DATA
 #We specify the file path of the dataset
 corpus_path = './es_corpus.txt'
 
@@ -16,7 +16,7 @@ with open(corpus_path, 'r') as file:
 nlp = spacy.load('es_core_news_sm')
 doc=nlp(corpus)
 
-# CAPTURING NOUNS THAT CAN DENOTE INFORMATIONAL CONTENT
+#CAPTURING NOUNS THAT CAN DENOTE INFORMATIONAL CONTENT
 #We first create a handmade list of adjectives denoting informational content
 propositional_predicates = ['verdadero', 'falso', 'plausible', 'implausible', 'cierto',
                             'verídico', 'empírico', 'franco', 'real', 'veraz', 'sincero',
