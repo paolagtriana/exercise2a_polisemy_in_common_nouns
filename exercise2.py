@@ -5,7 +5,7 @@ from collections import Counter
 
 #LOADING AND PROCESSING THE DATA
 #We define the file path of the dataset
-corpus_path = '/Users/paola/Desktop/exercise2/es_corpus.txt'
+corpus_path = './es_corpus.txt'
 
 #We open the dataset file and assign it to a new variable
 with open(corpus_path, 'r') as file:
